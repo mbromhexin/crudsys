@@ -1,0 +1,121 @@
+body{
+    background-color: rgb(48, 43, 43);
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: white;
+}
+.container{
+    width: 75%;
+    margin: auto;
+    text-align: center;
+}
+h1{
+    text-transform: uppercase;
+    font-size: 36px;
+    padding: 10px 0;
+}
+.price{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+small{
+    font-size: 24px;
+}
+input{
+    width: 100%;
+    font-size: 24px;
+    border: none;
+    padding: 10px;
+    margin: 5px 5px;
+    border-radius: 10px;
+    background-color: black;
+}
+.price input{
+    width: 20%;
+}
+.price small::before{
+    content: "total: ";
+}
+
+button{
+    width: 25%;
+    font-size: 20px;
+    padding: 10px 20px;
+    margin: 10px 20px;
+    background-color: rgb(18, 18, 233);
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+
+}
+button:hover{
+    background-color: rgb(63, 63, 228);
+}
+
+
+table{
+    margin-top: 50px;
+    width: 100%;
+    font-size: 20px;
+    padding: 0 20px;
+    text-align: center;
+}
+table th{
+    border: 1px solid white;
+    padding: 5px 5px;
+}
+table td{
+    border: 1px solid white;
+    padding: 5px 5px;
+
+}
+/* 
+updateBtn
+deleteBtn
+*/
+#updateBtn,
+#deleteBtn{
+    font-size: 18px;
+    background-color: red;
+    padding: 5px 0 ;
+    margin: 0;
+    width: 75%;
+    color: black;
+}
+#updateBtn{
+    background-color: yellow;
+}
+#updateBtn:hover{
+    background-color: rgb(224, 224, 126);
+}
+#deleteBtn:hover{
+    background-color: rgb(207, 92, 92);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+
+</head>
+<body>
+    
+<div class="container">
+    <h1>crud system</h1>
+    <input type="text" id="title" placeholder="Title">
+    <div class="price">
+        <input onkeyup="calcPrice()" type="text" id="price" placeholder="Price">
+        <input onkeyup="calcPrice()" type="text" id="taxes" placeholder="Taxes">
+        <input onkeyup="calcPrice()" type="text" id="ads" placeholder="Ads">
+        <input onkeyup="calcPrice()" type="text" id="discount" placeholder="Discount">
+        <small id="total"></small>
+    </div>
+    <input type="text" id="count" placeholder="count">
+    <input type="text" id="category" placeholder="category">
+    <button id="create">Create</button>
+    <input onkeyup="searchInProducts()" type="text" id="search" placeholder="Search">
+    <button id="searchByTitle">Search by Title</button>
+    <button id="searchByCategory">Search by Category</button>
+</div>
+
+<table>
+    <thead>
+        <th>ID</th>
+        <th>Title</th>
+        <th>Price</th>
+        <th>Category</th>
+        <th>Count</th>
+        <th>Taxes</th>
+        <th>Ads</th>
+        <th>Discount</th>
+        <th>Total</th>
+        <th>Upadate</th>
+        <th>Delete</th>
+    </thead>
+    <tbody id="tbody">
+    </tbody>
+</table>
+
+
+
+    <script src="main.js"></script>
+</body>
+</html>
